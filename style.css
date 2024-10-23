@@ -2,15 +2,55 @@
 
 * {
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
   margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-column: 3fr;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1.25em;
+}
+
+.logo img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.2em;
+}
+
+.logo h1 {
+  color: #0e0e0e;
+  font-size: 0.85rem;
+}
+
+ul {
+  display: flex;
+  margin-top: 1.2rem;
+}
+
+ul li {
+  list-style: none;
+  padding-right: 1.25em;
+}
+
+ul li a {
+  font-size: 0.75rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #0e0e0e;
 }
